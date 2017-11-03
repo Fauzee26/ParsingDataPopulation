@@ -112,7 +112,7 @@ class PopulationTableViewController: UITableViewController {
     //this method will parsing data Json
     func parseJsonData(data: Data) -> [Population] {
         //declare variable loans as object from loans class
-        let populatioNN = [Population]()
+        var populationN = [Population]()
         //will repeat to json data that parsed
         do{
             //declare jsonResult for take data from the json
@@ -135,7 +135,7 @@ class PopulationTableViewController: UITableViewController {
         }catch{
             print(error)
         }
-        return populatioNN
+        return populationN
     }
 }
 
